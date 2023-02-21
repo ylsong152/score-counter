@@ -1,0 +1,74 @@
+@font-face {
+    font-family: scoreFont;
+    src: url(score_font.ttf);
+}
+
+body {
+    margin: 0;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3 {
+    margin: 0;
+    font-size: 3em;
+    color: white;
+    font-weight: 900;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20vh 30vw;
+    height: 50vh;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: #470264;
+    border-radius: 10px;
+}
+
+.home-panel, .guest-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+#home-display, #guest-display {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding-top: 14px;
+    font-size: 6em;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    font-family: scoreFont;
+}
+
+button {
+    font-size: 2em;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color:#f2d4ff;
+    /* color: white;
+    border: 1px solid white; */
+}
+
+button:active {
+    background-color: white;
+}
+
+.game-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
